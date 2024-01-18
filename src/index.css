@@ -11,6 +11,21 @@
     }
     .sliderArrow{
         @apply w-[50px] h-[50px] bg-[#fff7f7] rounded-[50%] cursor-pointer
-        flex items-center justify-center absolute top-0 bottom-0 m-auto opacity-[0.5];
+        flex items-center justify-center absolute top-0 bottom-0 m-auto opacity-[0.5] z-[2];
+    }
+    .slider{
+        @apply flex items-center w-[100vw] h-[100vh];
+    }
+    .title{
+        @apply text-[70px] font-bold;
+    }
+    .desc{
+        @apply my-[50px] mx-0 text-[20px] font-semibold tracking-[3px];
+    }
+    .shop-btn{
+        @apply p-[10px] text-[20px] font-medium bg-transparent cursor-pointer border-solid border-black border-[2px];
+    }
+    .slideImage{
+        @apply h-[90%] object-cover;
     }
 }

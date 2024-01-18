@@ -1,29 +1,35 @@
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
+import { ArrowLeftOutlined, ArrowRightOutlined} from "@mui/icons-material";
+import { useState } from "react";
+import ImageSlider from "./imageSlider";
+import { sliderItems } from "../data";
 
 const Slider = () => {
+
+    const [slideIndex,setSlideIndex] = useState(0);
+
+    const clickHandler = (direction)=>{
+       if (direction === 'left'){
+        setSlideIndex(slideIndex > 0 ? slideIndex-1 : 2)
+        // console.log(slideIndex);
+       }else{
+        setSlideIndex(slideIndex < 2 ? slideIndex+1 : 0)
+       }
+    }
+
     return ( 
-        <div className="w-[100%] h-[100vh] flex relative">
+        <div className="w-[100%] h-[100vh] flex relative overflow-hidden">
             <div className="sliderArrow left-[10px]">
-                <ArrowLeftOutlined/>
+                <ArrowLeftOutlined onClick={()=>{clickHandler('left')}}/>
             </div>
             
-            <div className="h-[100%]">
-                <div className="flex items-center w-[100vw] h-[100vh]"> {/**Slide */}
-                 
-                    <div className="flex-1 h-[100%]">  {/** ImageContainer */}
-                    <img src="https://i.ibb.co/XsdmR2c/1.png" 
-                         className="h-[90%] object-cover"/>
-                    </div>
-
-                    <div className="flex-1 p-[50px]"> {/** InfoContainer */}
-
-                    </div>
-
-                </div>
+            <div style={{ display: 'flex',height: '100%', transform: `translateX(${slideIndex * -100}vw)`, transition: 'all 1s ease-in-out' }}>
+                {sliderItems.map((item)=>(
+                    <ImageSlider key={item.id} bg={item.bg} desc={item.desc} img={item.img} title={item.title}/>
+                ))}
             </div>
 
-            <div className="sliderArrow right-[10px]">
-                <ArrowRightOutlined/>
+            <div className="sliderArrow right-[10px]">``
+                <ArrowRightOutlined onClick={()=>{clickHandler('right')}}/>
             </div>
         </div>
      );

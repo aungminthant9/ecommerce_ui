@@ -7,7 +7,7 @@ const Navbar = () => {
              <div className="flex-1 flex items-center">
                 <span className="text-[16px] cursor-pointer">EN</span>
                 <div className="border border-gray-200 flex items-center ml-[25px]">
-                    <input type="text"/>
+                    <input type="text" className="outline-none"/>
                     <Search className="searchIcon"/>
                 </div>
              </div> 
