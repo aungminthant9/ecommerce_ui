@@ -1,6 +1,11 @@
 import f1 from './assets/F1.png';
 import f2 from './assets/F2.png';
 import f3 from './assets/F3.png';
+import f4 from './assets/shirt.png';
+import f5 from './assets/blouse.png';
+import f6 from './assets/hat.png';
+import f7 from './assets/trouser.png';
+import f8 from './assets/shirt2.png';
 
 export const sliderItems = [
 {
@@ -47,11 +52,11 @@ export const categories = [
   export const popularProducts = [
     {
       id:1,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+      img:f8,
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:f4,
     },
     {
       id:3,
@@ -59,7 +64,7 @@ export const categories = [
     },
     {
       id:4,
-      img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+      img:f5,
     },
     {
       id:5,
@@ -67,11 +72,11 @@ export const categories = [
     },
     {
       id:6,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+      img:f7,
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:f6,
     },
     {
       id:8,

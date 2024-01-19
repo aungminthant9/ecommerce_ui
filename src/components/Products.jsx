@@ -1,6 +1,13 @@
+import { popularProducts } from "../data";
+import Product from "./Product";
+
 const Products = () => {
     return ( 
-        <div></div>
+        <div className="p-[20px] flex flex-wrap justify-between">
+            {popularProducts.map((item)=>(
+                <Product item={item} key={item.id}/>
+            ))}
+        </div>
      );
 }
  
