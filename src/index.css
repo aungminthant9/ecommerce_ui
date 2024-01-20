@@ -7,7 +7,7 @@
         @apply mr-[20px] cursor-pointer font-semibold;
     }
     .searchIcon{
-        @apply text-gray-300 text-[20px] !important;
+        @apply text-gray-300 text-[20px] cursor-pointer !important;
     }
     .sliderArrow{
         @apply w-[50px] h-[50px] bg-[#fff7f7] rounded-[50%] cursor-pointer
@@ -27,5 +27,20 @@
     }
     .slideImage{
         @apply h-[90%] object-cover;
+    }
+    .productIcon{
+        @apply w-[40px] h-[40px] rounded-full bg-white flex items-center justify-center m-[10px] hover:bg-[#e9f5f5] hover:scale-[1.1] transition-all;
+    }
+    .socialIcon{
+        @apply w-[40px] h-[40px] rounded-full text-white flex items-center justify-center mr-[10px];
+    }
+    .listItem{
+        @apply w-[50%] mb-[10px];
+    }
+    .contact{
+        @apply flex mb-[20px] items-center;
+    }
+    .contactIcon{
+        @apply mr-[10px];
     }
 }

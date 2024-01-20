@@ -4,7 +4,7 @@ import f3 from './assets/F3.png';
 import f4 from './assets/shirt.png';
 import f5 from './assets/blouse.png';
 import f6 from './assets/hat.png';
-import f7 from './assets/trouser.png';
+import f7 from './assets/pant.png';
 import f8 from './assets/shirt2.png';
 
 export const sliderItems = [
