@@ -28,7 +28,7 @@ const Slider = () => {
                 ))}
             </div>
 
-            <div className="sliderArrow right-[10px]">``
+            <div className="sliderArrow right-[10px]">
                 <ArrowRightOutlined onClick={()=>{clickHandler('right')}}/>
             </div>
         </div>

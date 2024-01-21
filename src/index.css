@@ -43,4 +43,19 @@
     .contactIcon{
         @apply mr-[10px];
     }
+    .filter{
+        @apply m-[20px];
+    }
+    .filterText{
+        @apply text-[20px] font-semibold mr-[20px];
+    }
+    .select{
+        @apply p-[10px] mr-[20px];
+    }
+    .productFilter{
+        @apply flex items-center;
+    }
+    .filtercolor{
+        @apply w-[20px] h-[20px] rounded-full ml-[5px] cursor-pointer;
+    }
 }
