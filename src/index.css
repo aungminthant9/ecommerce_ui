@@ -58,4 +58,13 @@
     .filtercolor{
         @apply w-[20px] h-[20px] rounded-full ml-[5px] cursor-pointer;
     }
+    .formInput{
+        @apply flex-1 min-w-[40%] m-5 mx-2 mt-0 p-[10px] border-2;
+    }
+    .link{
+        @apply my-[5px] mx-0 text-[12px] underline cursor-pointer ml-[8px];
+    }
+    .loginInput{
+        @apply flex-1 min-w-[40%] my-[10px] mx-0 p-[10px] border-2 ;
+    }
 }

@@ -1,3 +1,4 @@
+import { Add, Remove } from "@mui/icons-material";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -42,6 +43,15 @@ const Product = () => {
                             <option>XL</option>
                         </select>
                         </div>
+                    </div> 
+                    <div className="w-[50%] flex items-center justify-between">  {/**add container */}
+                        <div className="flex items-center font-bold">  {/** amount container */}
+                            <Remove className="cursor-pointer"/>
+                            <span className="w-[30px] h-[30px] rounded-[10px] border-2 border-teal-500 flex items-center justify-center mx-[5px]">1</span>
+                            <Add className="cursor-pointer"/>
+                        </div>
+                        <button className="p-4 border-2 border-teal-500 bg-white cursor-pointer 
+                        font-semibold transition duration-300 ease-in-out hover:bg-teal-100 hover:border-teal-700">Add to Cart</button>
                     </div>
                 </div>
             </div>
