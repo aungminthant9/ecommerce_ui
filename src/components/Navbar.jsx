@@ -4,16 +4,16 @@ import { Badge } from "@mui/material";
 const Navbar = () => {
     return (  
         <div>
-        <div className="h-[50px] py-[10px] px-[10px] md:px-[20px] flex justify-between items-center">
+        <div className="h-[50px] py-[10px] px-[20px] flex justify-between items-center">
              <div className="flex-1 flex items-center">
-                <span className="text-[12px] md:text-[16px] cursor-pointer">EN</span>
-                <div className="border border-gray-200 flex items-center ml-[10px] md:ml-[25px]">
+                <span className="text-[16px] cursor-pointer">EN</span>
+                <div className="border border-gray-200 flex items-center ml-[25px]">
                     <input type="text" className="outline-none"/>
                     <Search className="searchIcon"/>
                 </div>
              </div> 
              <div className="flex-1 text-center">
-                <h1 className="font-bold text-[16px] md:text-2xl">AMT.</h1>
+                <h1 className="font-bold text-2xl">AMT.</h1>
              </div>
              <div className="flex-1">
                 <div className="flex items-center justify-end">
