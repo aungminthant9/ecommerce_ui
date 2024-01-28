@@ -67,4 +67,16 @@
     .loginInput{
         @apply flex-1 min-w-[40%] my-[10px] mx-0 p-[10px] border-2 ;
     }
+    .topButton{
+        @apply p-[10px] font-semibold cursor-pointer;
+    }
+    .topText{
+        @apply underline cursor-pointer my-0 mx-[10px];
+    }
+    .productColor{
+        @apply w-[20px] h-[20px] rounded-[50%];
+    }
+    .summaryItem{
+        @apply my-[30px] flex justify-between;
+    }
 }
